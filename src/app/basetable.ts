@@ -13,8 +13,11 @@ export class BaseDataTableComponent implements OnInit, AfterViewInit {
   requestJSON: string;
   dataSource: MatTableDataSource<any>;
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  //@ViewChild(MatPaginator) paginator: MatPaginator;
+  //@ViewChild(MatSort) sort: MatSort;
+  paginator: MatPaginator;
+  sort: MatSort;
+
 
   constructor() {
     this.dataSource = new MatTableDataSource(this.rows);
