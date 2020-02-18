@@ -3,7 +3,7 @@ import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 
 @Component({
   selector: 'app-datatable.base',
-  templateUrl: `./basetable.html`,
+  templateUrl: `basetable.html`,
   styleUrls: ['basetable.css']
 })
 
