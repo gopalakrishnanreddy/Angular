@@ -2,7 +2,8 @@ import { Component, Input, OnDestroy, OnInit, TemplateRef, ViewChild } from '@an
 import { BaseDataTableComponent } from './basetable';
 
 @Component({
-    selector: 'app-customer-table'
+    selector: 'app-customer-table',
+    template: '<div>child</div>'
 })
 export class CustomerTableComponent extends BaseDataTableComponent implements OnInit {
 
@@ -14,7 +15,7 @@ export class CustomerTableComponent extends BaseDataTableComponent implements On
     }
 
     ngOnInit() {
-        super.ngOnInit();
+        //super.ngOnInit();
         this.columnsToDisplay = ['id', 'name', 'progress', 'color'];        
         this.rows = customers;
     }
