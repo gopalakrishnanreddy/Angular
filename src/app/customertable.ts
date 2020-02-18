@@ -15,7 +15,7 @@ export class CustomerTableComponent extends BaseDataTableComponent implements On
     }
 
     ngOnInit() {
-        //super.ngOnInit();
+        super.ngOnInit();
         this.columnsToDisplay = ['id', 'name', 'progress', 'color'];        
         this.rows = customers;
     }
