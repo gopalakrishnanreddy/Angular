@@ -3,7 +3,7 @@ import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 
 @Component({
   selector: 'app-datatable.base',
-  templateUrl: `basetable.html`,
+  templateUrl: `./basetable.html`,
   styleUrls: ['basetable.css']
 })
 
@@ -24,12 +24,12 @@ export class BaseDataTableComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
 
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+    
   }
 
   applyFilter(filterValue: string) {
